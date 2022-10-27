@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {ShopItemEntity} from "../../types/shopItems";
 import {ShopItemsTable} from "./ShopItemsTable";
+import {ShopItemEntity} from 'types';
 
 export const ShopItemsList = () => {
     const [itemsList, setItemsList] = useState<ShopItemEntity[] | null>(null);
@@ -17,6 +17,7 @@ export const ShopItemsList = () => {
         return <p>Loading...</p>;
     }
     return <>
+        <h1>Shop items</h1>
         <ShopItemsTable shopItems={itemsList}/>
     </>
 };

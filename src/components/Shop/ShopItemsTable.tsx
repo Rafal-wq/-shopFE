@@ -1,5 +1,5 @@
 import React from "react";
-import {ShopItemEntity} from "../../types/shopItems";
+import {ShopItemEntity} from "types";
 import {ShopItemTableRow} from "./ShopItemTableRow";
 
 interface Props {
